@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Supermercado A&A</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="CSS/style.CSS">
+</head>
+<body>
+
+    <!-- ═════════════════ HEADER ═════════════════ -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <span><i class="fas fa-phone" style="margin-right: 8px;"></i> +503 6070-2671</span>
+               <span>Hecho por Brenda Mejía&Anderson Lopéz</span>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <span>SuperMercado A&A</span>
+            </a>
+
+            <!-- ═════════════════ MENÚ SOLO CON "INICIO" ═════════════════ -->
+            <!-- Tú agregas el resto de enlaces aquí -->
+            <nav>
+                <ul class="nav-menu">
+                     <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                    <!-- Agrega más enlaces aquí -->
+                </ul>
+            </nav>
+
+            <!-- Iconos a la derecha -->
+            <!-- Iconos -->
+            <div class="header-actions" style="display: flex; gap: 15px; align-items: center;">
+
+                <!-- Buscador -->
+                <button class="action-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <!-- Carrito con enlace y badge -->
+                <a href="https://tiendaelhuerto58367.store.link/" onclick="toggleCart(); return false;"
+                    class="action-btn" style="position: relative; text-decoration: none;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cart-count"></span>
+                </a>
+
+                <!-- Usuario -->
+                <button class="action-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="titulo-pagina">
+            <h1>Nuestros Productos.</h1>
+            <p>Frescura y ahorro en un solo lugar.</p>
+        </div>
+
+        <section class="categoria-section" id="limpieza">
+            <div class="categoria-header">
+                <i class="fas fa-soap"></i>
+                <h2>Área de Limpieza</h2>
+            </div>
+            <div class="productos-grid">
+                <div class="producto-card"><i><i class="fas fa-pump-soap"></i></i><h3>Detergente 1kg</h3><p class="precio">$2.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bottle-water"></i></i><h3>Cloro 1L</h3><p class="precio">$1.15</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-spray-can-sparkles"></i></i><h3>Desinfectante</h3><p class="precio">$1.85</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-soap"></i></i><h3>Jabón Líquido</h3><p class="precio">$2.20</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-wind"></i></i><h3>Suavizante</h3><p class="precio">$3.10</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-broom"></i></i><h3>Escoba</h3><p class="precio">$3.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bucket"></i></i><h3>Trapeador</h3><p class="precio">$2.80</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-box-archive"></i></i><h3>Bolsas Basura</h3><p class="precio">$1.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-rug"></i></i><h3>Esponjas</h3><p class="precio">$0.90</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-shower"></i></i><h3>Limpia Vidrios</h3><p class="precio">$2.15</p><button class="btn-comprar">Agregar</button></div>
+            </div>
+        </section>
+
+        <section class="categoria-section" id="verduras">
+            <div class="categoria-header">
+                <i class="fas fa-carrot"></i>
+                <h2>Verduras Frescas</h2>
+            </div>
+            <div class="productos-grid">
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Tomate (lb)</h3><p class="precio">$0.60</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Cebolla Blanca</h3><p class="precio">$0.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Papa (lb)</h3><p class="precio">$0.75</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Zanahoria</h3><p class="precio">$0.40</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Güisquil</h3><p class="precio">$0.55</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Chile Verde</h3><p class="precio">$0.25</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Pepino</h3><p class="precio">$0.35</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Lechuga</h3><p class="precio">$0.90</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Brócoli</h3><p class="precio">$1.10</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-seedling"></i></i><h3>Ajo</h3><p class="precio">$0.50</p><button class="btn-comprar">Agregar</button></div>
+            </div>
+        </section>
+
+        <section class="categoria-section" id="carnes">
+            <div class="categoria-header">
+                <i class="fas fa-drumstick-bite"></i>
+                <h2>Carnes y Embutidos</h2>
+            </div>
+            <div class="productos-grid">
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Lomo de Res</h3><p class="precio">$4.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Pollo Entero</h3><p class="precio">$3.20</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Costilla Cerdo</h3><p class="precio">$3.75</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Carne Molida</h3><p class="precio">$2.90</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Pechuga Pollo</h3><p class="precio">$3.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Chuleta</h3><p class="precio">$3.00</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Pescado Filete</h3><p class="precio">$4.00</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Chorizos</h3><p class="precio">$2.00</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Salchichas</h3><p class="precio">$1.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-meat"></i></i><h3>Alitas Pollo</h3><p class="precio">$2.80</p><button class="btn-comprar">Agregar</button></div>
+            </div>
+        </section>
+
+        <section class="categoria-section" id="lacteos">
+            <div class="categoria-header">
+                <i class="fas fa-cheese"></i>
+                <h2>Lácteos</h2>
+            </div>
+            <div class="productos-grid">
+                <div class="producto-card"><i><i class="fas fa-cow"></i></i><h3>Leche Entera</h3><p class="precio">$1.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-egg"></i></i><h3>Huevos (30u)</h3><p class="precio">$4.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-cheese"></i></i><h3>Queso Fresco</h3><p class="precio">$2.60</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bowl-food"></i></i><h3>Crema</h3><p class="precio">$1.25</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-ice-cream"></i></i><h3>Yogurt</h3><p class="precio">$0.90</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bread-slice"></i></i><h3>Mantequilla</h3><p class="precio">$0.75</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-cheese"></i></i><h3>Quesillo</h3><p class="precio">$2.80</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-box"></i></i><h3>Queso Duro</h3><p class="precio">$3.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-cow"></i></i><h3>Leche Polvo</h3><p class="precio">$5.20</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bowl-food"></i></i><h3>Cuajada</h3><p class="precio">$1.00</p><button class="btn-comprar">Agregar</button></div>
+            </div>
+        </section>
+
+        <section class="categoria-section" id="bebidas">
+            <div class="categoria-header">
+                <i class="fas fa-wine-glass"></i>
+                <h2>Bebidas</h2>
+            </div>
+            <div class="productos-grid">
+                <div class="producto-card"><i><i class="fas fa-bottle-water"></i></i><h3>Agua 1.5L</h3><p class="precio">$0.75</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bottle-droplet"></i></i><h3>Soda Cola 2L</h3><p class="precio">$1.90</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-glass-water"></i></i><h3>Jugo Naranja</h3><p class="precio">$1.25</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-mug-hot"></i></i><h3>Té Frío</h3><p class="precio">$1.10</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bolt"></i></i><h3>Energizante</h3><p class="precio">$1.50</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-wine-bottle"></i></i><h3>Néctar Pera</h3><p class="precio">$0.85</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bottle-droplet"></i></i><h3>Soda Lima</h3><p class="precio">$1.75</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-glass-water"></i></i><h3>Refresco Polvo</h3><p class="precio">$0.25</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bottle-water"></i></i><h3>Agua Mineral</h3><p class="precio">$0.90</p><button class="btn-comprar">Agregar</button></div>
+                <div class="producto-card"><i><i class="fas fa-bottle-droplet"></i></i><h3>Soda Uva</h3><p class="precio">$1.80</p><button class="btn-comprar">Agregar</button></div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- ═════════════════ FOOTER / CONTACTO ═════════════════ -->
+    <footer class="footer" id="contacto">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3><i class="fas fa-shopping-basket" style="color: var(--primary);"></i> SuperMercado A&A</h3>
+                <p>Tu supermercado de confianza. Productos frescos y de calidad para tu familia desde 2020.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100089874518001&locale=es_LA"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cryandeer/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50360702671"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Nosotros</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i>Av. 2 de Marzo, Barrio Centro, Jucuapa, Usulután, El Salvador.</li>
+                    <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i>+503 6070-2671</li>
+                    <li><i class="fas fa-envelope"
+                            style="color: var(--primary); margin-right: 10px;"></i>brendalymoya211@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 3° BTV-DS. Todos los derechos reservados. SuperMercado A&A</p>
+        </div>
+    </footer>
+</body>
+
+</html>

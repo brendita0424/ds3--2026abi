@@ -1,0 +1,143 @@
+ 
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Supermercado A&A</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="CSS/style.CSS">
+</head>
+<body>
+
+    <!-- ═════════════════ HEADER ═════════════════ -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <span><i class="fas fa-phone" style="margin-right: 8px;"></i> +503 6070-2671</span>
+               <span>Hecho por Brenda Mejía&Anderson Lopéz</span>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <span>SuperMercado A&A</span>
+            </a>
+
+            <!-- ═════════════════ MENÚ SOLO CON "INICIO" ═════════════════ -->
+            <!-- Tú agregas el resto de enlaces aquí -->
+            <nav>
+                <ul class="nav-menu">
+                     <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                    <!-- Agrega más enlaces aquí -->
+                </ul>
+            </nav>
+
+            <!-- Iconos a la derecha -->
+            <!-- Iconos -->
+            <div class="header-actions" style="display: flex; gap: 15px; align-items: center;">
+
+                <!-- Buscador -->
+                <button class="action-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <!-- Carrito con enlace y badge -->
+                <a href="https://tiendaelhuerto58367.store.link/" onclick="toggleCart(); return false;"
+                    class="action-btn" style="position: relative; text-decoration: none;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cart-count"></span>
+                </a>
+
+                <!-- Usuario -->
+                <button class="action-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="historia-container" style="padding: 50px 10%; line-height: 1.8;">
+    <div style="margin-bottom: 80px; text-align: center;">
+        <h2 style="color: #1B5E20; font-size: 2.5rem; margin-bottom: 20px;">Nuestra Empresa</h2>
+        <img src="img/Logo/Super (1).png" alt="Local A&A" style="width: 100%; max-width: 800px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+        <p style="margin-top: 25px; font-size: 1.1rem; color: #444;">Supermercado A&A no nació solo como un negocio, sino como un sueño familiar en el corazón de Jucuapa, Usulután.
+             Todo comenzó con la visión de llevar productos frescos y de calidad a cada hogar de nuestra ciudad, entendiendo que el presupuesto familiar es sagrado.
+Lo que inició como un pequeño puesto de productos básicos, se ha transformado gracias a la lealtad de nuestros clientes en un supermercado moderno y completo. Nuestro nombre, A&A, representa los dos pilares que nos sostienen: Ahorro y Atención.<br>
+Ahorro: Porque nos esforzamos por mantener precios justos para que a nadie le falte nada en su mesa.<br>
+Atención: Porque no solo vendemos productos, servimos a nuestros vecinos con el respeto y la amabilidad que caracteriza al pueblo jucuapense.<br>
+Hoy, seguimos creciendo de la mano con nuestra comunidad, orgullosos de nuestras raíces y comprometidos con el futuro de Jucuapa. En Supermercado A&A, más que clientes, somos una gran familia.</p>
+    </div>
+
+    <div style="background-color: #f9f9f9; padding: 40px; border-radius: 20px; border-left: 8px solid #1B5E20;">
+        <h2 style="color: #1B5E20; margin-bottom: 20px;">Orgullo de Jucuapa: Nuestro Instituto...</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+            <img src="img/Logo/inju.jpg" alt="INJ" style="width: 300px; border-radius: 10px;">
+            <div style="flex: 1; min-width: 300px;">
+                <p><strong>El Instituto Nacional de Jucuapa (INJ)</strong> El Instituto Nacional de Jucuapa es una destacada institución educativa de nivel medio ubicada en el municipio de Jucuapa, en el departamento de Usulután, El Salvador. Fundado en el año 1966, este centro de estudios ha sido, a lo largo de las décadas, un pilar fundamental en la formación académica de jóvenes en la región oriental del país.
+Desde sus inicios, el instituto ha mantenido un firme compromiso con la excelencia educativa. Gracias a su trayectoria y al esfuerzo conjunto de docentes, estudiantes y autoridades, el INJU se ha consolidado como una de las mejores instituciones educativas a nivel departamental, ganándose el respeto y reconocimiento tanto en la comunidad local como en todo el departamento de Usulután.
+El INJU es una institución pública, lo que significa que está financiada y administrada por el Estado salvadoreño, bajo los lineamientos establecidos por el Ministerio de Educación (MINED). Como tal, ofrece una educación accesible y de calidad a jóvenes de distintos sectores sociales, contribuyendo a la equidad educativa en el país.
+El prestigio del Instituto Nacional de Jucuapa se debe, en parte, a sus buenos resultados académicos, al compromiso de su personal docente y al desempeño sobresaliente de sus estudiantes en diversas competencias y actividades extracurriculares. A lo largo del tiempo, ha demostrado ser un semillero de talentos en áreas como las ciencias, las artes, el deporte y la tecnología.
+En resumen, el Instituto Nacional de Jucuapa no solo representa una oportunidad educativa para la juventud de Usulután, sino también un símbolo de compromiso, superación y orgullo para toda la comunidad....</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+ 
+ 
+ 
+ 
+ 
+ <!-- ═════════════════ FOOTER / CONTACTO ═════════════════ -->
+    <footer class="footer" id="contacto">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3><i class="fas fa-shopping-basket" style="color: var(--primary);"></i> SuperMercado A&A</h3>
+                <p>Tu supermercado de confianza. Productos frescos y de calidad para tu familia desde 2020.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100089874518001&locale=es_LA"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cryandeer/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50360702671"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Nosotros</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i>Av. 2 de Marzo, Barrio Centro, Jucuapa, Usulután, El Salvador.</li>
+                    <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i>+503 6070-2671</li>
+                    <li><i class="fas fa-envelope"
+                            style="color: var(--primary); margin-right: 10px;"></i>brendalymoya211@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 3° BTV-DS. Todos los derechos reservados. SuperMercado A&A</p>
+        </div>
+    </footer>

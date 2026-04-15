@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMercado - Tu Supermercado de Confianza</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- ═════════════════ HEADER ═════════════════ -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <span><i class="fas fa-phone" style="margin-right: 8px;"></i> +503 6070-2671</span>
+                <span>Hecho por Brenda Mejía&Anderson Lopéz</span>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <span>SuperMercado A&A</span>
+            </a>
+
+            <!-- ═════════════════ MENÚ SOLO CON "INICIO" ═════════════════ -->
+            <!-- Tú agregas el resto de enlaces aquí -->
+            <nav>
+                <ul class="nav-menu">
+                     <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                    <!-- Agrega más enlaces aquí -->
+                </ul>
+            </nav>
+
+            <!-- Iconos a la derecha -->
+            <!-- Iconos -->
+            <div class="header-actions" style="display: flex; gap: 15px; align-items: center;">
+
+                <!-- Buscador -->
+                <button class="action-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <!-- Carrito con enlace y badge -->
+                <a href="https://tiendaelhuerto58367.store.link/" onclick="toggleCart(); return false;"
+                    class="action-btn" style="position: relative; text-decoration: none;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cart-count"></span>
+                </a>
+
+                <!-- Usuario -->
+                <button class="action-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="galeria-local">
+    <div class="container-galeria">
+        <div class="galeria-titulo">
+            <h2>Nuestra Instalaciones</h2>
+            <p>Conoce el interior de Supermercado A&A en Jucuapa</p>
+        </div>
+
+        <div class="grid-galeria">
+            <div class="foto-item">
+                <img src="img/Galeria/Como luce.jpg" alt="Fachada del local">
+                <div class="overlay"><span>Fachada Principal</span></div>
+            </div>
+
+            <div class="foto-item">
+                <img src="img/Galeria/Pasillo.jpg" alt="Pasillo de abarrotes">
+                <div class="overlay"><span>Pasillos Ordenados</span></div>
+            </div>
+
+            <div class="foto-item">
+                <img src="img/Galeria/area de caja.avif" alt="Área de cajas">
+                <div class="overlay"><span>Atención al Cliente</span></div>
+            </div>
+
+            <div class="foto-item">
+                <img src="img/Galeria/area de carne.jpg" alt="Área de carnes y verduras">
+                <div class="overlay"><span>Productos Frescos</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═════════════════ FOOTER / CONTACTO ═════════════════ -->
+    <footer class="footer" id="contacto">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3><i class="fas fa-shopping-basket" style="color: var(--primary);"></i> SuperMercado A&A</h3>
+                <p>Tu supermercado de confianza. Productos frescos y de calidad para tu familia desde 2020.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100089874518001&locale=es_LA"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cryandeer/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50360702671"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                     <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Nosotros</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i>Av. 2 de Marzo, Barrio Centro, Jucuapa, Usulután, El Salvador.</li>
+                    <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i>+503 6070-2671</li></li>
+                    <li><i class="fas fa-envelope"
+                            style="color: var(--primary); margin-right: 10px;"></i>brendalymoya211@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 3° BTV-DS. Todos los derechos reservados. SuperMercado A&A</p>
+        </div>
+    </footer>

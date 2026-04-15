@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMercado - Tu Supermercado de Confianza</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- ═════════════════ HEADER ═════════════════ -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <span><i class="fas fa-phone" style="margin-right: 8px;"></i> +503 6070-2671</span>
+               <span>Hecho por Brenda Mejía&Anderson Lopéz</span>
+        </div>
+
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <span>SuperMercado A&A</span>
+            </a>
+
+            <!-- ═════════════════ MENÚ SOLO CON "INICIO" ═════════════════ -->
+            <!-- Tú agregas el resto de enlaces aquí -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Historia</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                    <!-- Agrega más enlaces aquí -->
+                </ul>
+            </nav>
+
+            <!-- Iconos a la derecha -->
+            <!-- Iconos -->
+            <div class="header-actions" style="display: flex; gap: 15px; align-items: center;">
+
+                <!-- Buscador -->
+                <button class="action-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <!-- Carrito con enlace y badge -->
+                <a href="https://tiendaelhuerto58367.store.link/" onclick="toggleCart(); return false;"
+                    class="action-btn" style="position: relative; text-decoration: none;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge" id="cart-count"></span>
+                </a>
+
+                <!-- Usuario -->
+                <button class="action-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ═════════════════ SECCIÓN INICIO ═════════════════ -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tu Supermercado de Confianza.</h1>
+            <p>Productos frescos, precios justos y la mejor atención para tu familia.</p>
+
+            <div class="logo-circle-container">
+                <div class="logo-white-circle">
+                    <img src="img/Logo/Super.png" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═════════════════ SECCIÓN DESTACADO ═════════════════ -->
+    <section class="destacados-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Destacado.</h2>
+                <div class="decorator"></div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-tag">Nuevo</div>
+                    <div class="producto-img">
+                        <img src="img/Prod..Destacados/aceite.jpg" alt="Producto">
+                        <div class="placeholder-icon"><i class="fas fa-image"></i></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">Canasta básica</span>
+                        <h3>Aceite Orisol</h3>
+                        <p class="precio">$2.25 <span>/ 700 ml</span></p>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-tag oferta">Oferta</div>
+                    <div class="producto-img">
+                        <img src="img/Prod..Destacados/azucar.jpg" alt="Producto">
+                        <div class="placeholder-icon"><i class="fas fa-image"></i></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">Canasta básica</span>
+                        <h3>Azúcar</h3>
+                        <p class="precio">$0.65 <span>/ lb</span></p>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-img">
+                        <img src="img/Prod..Destacados/detergente.webp" alt="Producto">
+                        <div class="placeholder-icon"><i class="fas fa-image"></i></div>
+                    </div>
+                    <div class="producto-info">
+                        <span class="categoria">Limpieza</span>
+                        <h3>Rinso</h3>
+                        <p class="precio">$1.00 <span>/ Unidad</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═════════════════ Sección Categorías ═════════════════ -->
+    <section class="services-section" id="productos">
+        <div class="section-title">
+            <h2>Categorías.</h2>
+            <p>Todo lo que necesitas para tu hogar</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="img/Categorias/arroz.webp" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <h3>Granos Básicos</h3>
+                    <p>Arroz, frijoles, maíz, avena y más.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="img/Categorias/verduras.webp" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <h3>Verduras Frescas</h3>
+                    <p>Del campo directo a tu mesa.</p>
+                </div>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="img/Categorias/frutas.jpg" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <h3>Frutas de Temporada</h3>
+                    <p>Las más frescas del mercado.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="img/Categorias/limpieza.webp" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <h3>Limpieza</h3>
+                    <p>Los productos más efectivos para mantener tu hogar limpio.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="img/Categorias/lacteos y huevos.avif" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <h3>Lacteos y Huevos </h3>
+                    <p>Productos lácteos y huevos de alta calidad.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="img/Categorias/sodas.webp" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <h3>Bebidas</h3>
+                    <p>Refrescos y bebidas gaseosas de alta calidad.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="img/Categorias/carnes.png" alt="1026-06-17_20-44-11"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="service-content">
+                    <h3>Carnes y aves</h3>
+                    <p>Carne fresca y pollo de alta calidad.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- ═════════════════ Sección de Reseñas ═════════════════ -->
+    <section class="resenas-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo que dicen nuestros clientes.</h2>
+                <p>La confianza de nuestra comunidad es lo más importante</p>
+            </div>
+
+            <div class="resenas-grid">
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="comentario">"Excelente atención y los productos siempre están frescos. Los precios son los
+                        más competitivos de Jucuapa."</p>
+                    <div class="cliente">
+                        <div class="cliente-info">
+                            <strong>Brenda Mejía</strong>
+                            <span>Cliente frecuente</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="comentario">"Me encanta el orden y la limpieza del supermercado. El área de carnes y
+                        verduras es impecable."</p>
+                    <div class="cliente">
+                        <div class="cliente-info">
+                            <strong>Ester Lucía</strong>
+                            <span>Vecino de la zona</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resena-card">
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="comentario">"Las ofertas del mes realmente ayudan al presupuesto familiar. Muy recomendado
+                        para las compras del hogar."</p>
+                    <div class="cliente">
+                        <div class="cliente-info">
+                            <strong>Xiomara Pineda</strong>
+                            <span>Cliente satisfecho</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- ═════════════════ SECCIÓN NOSOTROS (VISIÓN, MISIÓN, VALORES) ═════════════════ -->
+    <section class="section" id="nosotros">
+        <div class="section-title">
+            <h2>Sobre Nosotros</h2>
+            <p>Conoce quiénes somos y qué nos mueve.</p>
+        </div>
+
+        <div class="about-grid">
+            <!-- ═════════════════ CARTA 1: VISIÓN ═════════════════ -->
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Visión</h3>
+                <p>
+                    Ser el supermercado líder de la zona, ampliando nuestras sucursales
+                    para llegar a más familias salvadoreñas. Queremos ser recordados como
+                    el lugar donde las abuelas, madres y jóvenes encuentran lo que necesitan
+                    con confianza, calidad y buenos precios todos los días.
+                </p>
+            </div>
+
+            <!-- ═════════════════ CARTA 2: MISIÓN ═════════════════ -->
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Misión</h3>
+                <p>
+                    Ser el supermercado de barrio preferido por las familias de nuestra
+                    comunidad, ofreciendo productos frescos, precios justos y un trato
+                    personalizado que haga sentir a cada cliente como en casa. Brindamos
+                    la comodidad de encontrar todo en un solo lugar.
+                </p>
+            </div>
+
+            <!-- ═════════════════ CARTA 3: VALORES ═════════════════ -->
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Valores</h3>
+                <p>
+                    🤝 Confianza: Precios claros, la balanza nunca miente.<br>
+                    🥬 Frescura: Reabastecimiento diario de frutas, verduras y pan.<br>
+                    💰 Ahorro: Ofertas reales todos los días.<br>
+                    😊 Atención Personal: Te conocemos por tu nombre.<br>
+                    ⏰ Puntualidad: Respetamos tu tiempo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ═════════════════ OFERTAS DEL MES ═════════════════ -->
+    <div>
+        <section class="section" id="ofertas">
+            <div class="section-title">
+                <h2>Ofertas del Mes</h2>
+                <p>Conoce nuestras mejores ofertas de este mes.</p>
+            </div>
+            <section class="ofertas-mes">
+                <div class="container">
+                    <div class="oferta-principal">
+                        <div class="oferta-info">
+                            <span class="badge-oferta">🔥 EXCLUSIVO DE ABRIL</span>
+                            <h2>Gran Ahorro Familiar</h2>
+                            <p>Aprovecha nuestros descuentos especiales en productos seleccionados de la canasta básica.
+                                ¡Solo por tiempo limitado!</p>
+
+                            <div class="cupon-container">
+                                <div class="cupon">
+                                    <span class="desc">30%</span>
+                                    <span class="tipo">DCTO.</span>
+                                </div>
+                                <div class="cupon-texto">
+                                    <p>En toda el área de <strong>Lácteos y Embutidos</strong></p>
+                                    <small>*Aplica todos los miércoles del mes</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="oferta-visual">
+                            <div class="img-placeholder">
+                                <img src="img/Categorias/carnyave.jpg" alt="1026-06-17_20-44-11"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    </div>
+
+
+
+
+    <!-- ═════════════════ FOOTER / CONTACTO ═════════════════ -->
+    <footer class="footer" id="contacto">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3><i class="fas fa-shopping-basket" style="color: var(--primary);"></i> SuperMercado A&A</h3>
+                <p>Tu supermercado de confianza. Productos frescos y de calidad para tu familia desde 2020.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100089874518001&locale=es_LA"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cryandeer/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/50360702671"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li> 
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Historia.html">Nosotros</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Ubicación y Contacto.html">Ubicación y Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i>Av. 2 de Marzo, Barrio Centro, Jucuapa, Usulután, El Salvador.</li>
+                    <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i>+503 6070-2671</li>
+                    <li><i class="fas fa-envelope"
+                            style="color: var(--primary); margin-right: 10px;"></i>brendalymoya211@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 3° BTV-DS. Todos los derechos reservados. SuperMercado A&A</p>
+        </div>
+    </footer>
+</body>
+
+</html>
